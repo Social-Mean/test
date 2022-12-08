@@ -11,9 +11,9 @@ jobs:
         uses: dante-ev/latex-action@2021-A
         with:
     # The root LaTeX file to be compiled
-          root_file: ${{ github.workspace }}/main.tex
+          root_file: main.tex
     # The working directory for the latex compiler to be invoked
-           #working_directory: # optional
+          working_directory: ${{ github.workspace }}# optional
     # LaTeX engine to be used
           compiler: xelatex  # optional, default is latexmk
     # Extra arguments to be passed to the latex compiler
