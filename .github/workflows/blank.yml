@@ -5,11 +5,11 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Compile LateX
-        uses: vinay0410/tectonic-action@v1.1.2
+      - name: xelatex GitHub Action
+        uses: marcomicera/xelatex-action@v0.6
         with:
           # Path of Tex File
-          tex_path: main.tex
+          input-file: main.tex # optional
           # String stating whether to push output PDF, PDF will only be pushed in case of "yes"
-          push: yes# optional, default is no
+        
       
