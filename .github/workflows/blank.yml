@@ -6,10 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: xelatex GitHub Action
-        uses: marcomicera/xelatex-action@v0.6
+        uses: matsavage/dnd-latex-action@v0.3.0
         with:
           # Path of Tex File
-          input-file: main.tex # optional
+          compiler: xelatex # optional
           # String stating whether to push output PDF, PDF will only be pushed in case of "yes"
         
       
